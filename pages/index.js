@@ -20,7 +20,7 @@ export default function Home() {
     .then(response => response.json())
     .then(data => console.log(data))
   }
-  function loadFeedbackHandler(){
+function loadFeedbackHandler(){
  fetch('/api/feedback')
     .then(response => response.json())
     .then(data => updateFeedbackItems(data.feedback));
